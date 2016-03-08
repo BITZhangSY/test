@@ -1,0 +1,34 @@
+mac 下统计代码行数
+
+打开终端，用cd命令 定位到工程所在的目录，然后调用以下命名即可把每个源代码文件行数及总数统计出来：
+find . "(" -name "*.m" -or -name "*.mm" -or -name "*.cpp" -or -name "*.h" -or -name "*.rss" ")" -print | xargs wc -l
+
+其中，-name  "*.m" 就表示扩展名为.m的文件。
+find . "(" -name "*.m"  ")" -print | xargs wc -l
+
+find . "(" -name "*.java" -or -name "*.xml" ")" -print | xargs wc -l
+
+
+获取android SHA1:
+
+android studio  terminal下输入如下命令：
+keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+得到：
+ MD5: 
+ 55:B0:7F:54:0D:72:1E:59:99:43:62:BF:A6:A8:52:AB
+ SHA1: 
+ 27:C3:6A:06:1C:72:DA:8A:70:BD:BE:7B:A5:F7:CE:ED:A6:BF:0D:C3
+ SHA256: 
+ E0:CE:0F:94:72:EF:B3:34:94:39:5C:8C:95:D5:5E:6D:F1:27:29:47:C3:00:90:CE:8F:69:55:35:59:23:1D:0D
+
+
+ 各位同学好：
+
+关于语言信息处理和机器翻译，推荐给你们一些公开的资料，如下。或者在”知网CNKI“http://cnki.net/上搜索相关文献。
+
+http://ling.cass.cn/yingyong/courses/nlpbase.htm
+http://youniya520.blog.163.com/blog/static/23727544201127104058393/
+http://wenku.baidu.com/link?url=yNaooVT6ACrOZGCbyTWOKgfKbdqmZbjOrq1R0TTOILQuV4YEBy2IUnSB_AAAJDJduT9RZeOOVvCAlbsPYJrD8JLM3skRuzgQIUdmrmtAja_&pn=50
+http://wenku.baidu.com/link?url=3xvAP3B25MvmWbLJD74HKrehYJRndU__ceU5wxq7YtAJRVm5EfRibfHUp5sgPuldQ7i0ntaZJQ2Gpmmz8h2VWiyL3GneVPeDEY62RGUirAS
+
+中科院自动化所宗成庆老师的自然语言理解课程http://video.chaoxing.com/serie_400001586.shtml，供感兴趣的同学观看。
